@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability</title>
+    <link rel="stylesheet" href="option.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div id ="box">
+            <div class="title">
+                <p>Probability</p>
+            </div>
+            <!-- timer screen and score card start -->
+            <div class="header">
+                
+                <div class="timerbox" id="timerbox"><span>Time Left:200</span></div>
+                <div class="scorebox" id="scorebox"><span>Score: 00</span></div>
+            </div>
+
+            <!-- timer screen and score card end  -->
+
+
+            <div class="QuestionBox">
+                <H2 id="queBox">This is the dummy question</H2>
+            </div>
+            <div class="optionBox">
+                <div class="row">
+                    <input class="options"  type="radio" name="option" id="option1" value="a"/>
+                    <label name="option" for="option1">option A</label>
+                </div>
+    
+                <div class="row">
+                    <input class="options"  type="radio" name="option" id="option2" value="b"/>
+                    <label for="option2">option B</label>
+                </div>
+    
+                <div class="row">
+                    <input class="options"  type="radio" name="option" id="option3" value="c"/>
+                    <label for="option3">option C</label>
+                </div>
+    
+                <div class="row">
+                    <input class="options" type="radio" name="option" id="option4" value="d"/>
+                    <label for="option4">option D</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn" id="prev" onclick="previousQuestion()">Previous</button>
+                <button type="submit" class="btn" id="next" onclick="submitQuiz()">Next Question</button>
+            </div>
+        </div>     
+    </div>
+
+    <script src="probability.js"></script>
+</body>
+</html>
